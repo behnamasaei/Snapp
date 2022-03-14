@@ -117,10 +117,18 @@
 
 * {
   font-family: IRANSans-web;
+  color: #404040;
 }
 
-container-fluid {
+main{
+  padding-top: 6rem;
+}
+
+.container-fluid {
+  width: 100%;
   max-width: 100%;
+  background: white;
+  padding: 0;
 }
 
 .row {
@@ -130,26 +138,45 @@ container-fluid {
 
 header {
   font-size: 15.2px;
+  background: #fff;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999;
 }
 
+header > .navbar > .container-fluid {
+  background: #fff;
+}
+
+footer {
+  background: white;
+}
+
+footer .navbar {
+  background: white;
+}
 /******** Main section ********/
 
 section .request-phone-r {
   background-color: #21aa58;
   padding: 1rem 6rem 1rem 3rem;
+  color: white;
 }
 
 section .request-phone-r h1 {
   font-size: 36px;
+  color: white;
 }
 
 section .request-phone-r p {
   font-family: IRANSans-web;
   letter-spacing: 2px;
+  color: white;
 }
 
 section .request-phone-r .btn-send-phone {
-  background-color: white;
+  background-color: white !important;
   color: #21aa58;
   width: 7rem;
 }
@@ -160,47 +187,89 @@ section .request-phone-l {
 
 /******** app-forevery-one ********/
 
-.app-forevery-one{
+.app-forevery-one {
   background: #f2f5f8;
 }
 
-.app-forevery-one h3{
+.app-forevery-one h3 {
   font-size: 1rem;
 }
 
-.app-forevery-one .card-every-one{
-border-radius: 20px;
+.app-forevery-one .card-every-one {
+  border-radius: 20px;
 }
 
 /******** app-forevery-one ********/
+/*********************************/
+/******** slider-index ********/
 
+.slider-index .carousel-inner {
+  border-radius: 10px;
+}
 
+/******** slider-index ********/
+/*********************************/
+/******** easy-fast-echo-index ********/
+
+.easy-fast-echo-index .card-image-index {
+  background: #f2f5f8;
+  border-radius: 1rem;
+}
+
+/*********************************/
+/******** easy-fast-echo-index ********/
+/*********************************/
+
+.supper-app-index img {
+  height: 90vh;
+  min-height: 520px;
+  width: 100%;
+}
+
+/******** supper-app-index ********/
+/*********************************/
+/******** invite-to-snapp-vedio ********/
+/*********************************/
+
+.invite-to-snapp-vedio {
+  background: #f2f5f8;
+  text-align: center;
+}
+
+.invite-to-snapp-vedio button {
+  background-color: rgb(0, 209, 112);
+  color: white;
+}
+
+.invite-to-snapp-vedio .card {
+  border-radius: 15px;
+}
+/******** invite-to-snapp-vedio ********/
+/*********************************/
 
 @media only screen and (max-width: 576px) {
-  
 }
 
 @media only screen and (max-width: 768px) {
-  .section-badge-icon{
+  .section-badge-icon {
     display: none;
   }
 
-  .app-forevery-one .card-every-one{
+  .app-forevery-one .card-every-one {
     margin: 1rem !important;
   }
 
-  .app-forevery-one h3{
+  .app-forevery-one h3 {
     text-align: center;
   }
 
-  .app-forevery-one p{
+  .app-forevery-one p {
     display: none;
   }
-
 }
 
 @media only screen and (max-width: 992px) {
-  .main-section .phone-request-form{
+  .main-section .phone-request-form {
     display: none;
   }
 }
